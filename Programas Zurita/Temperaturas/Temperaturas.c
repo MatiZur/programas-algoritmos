@@ -1,7 +1,7 @@
 /* Realizar un programa para procesar las temperaturas de una semana. Informar:
 1. Promedio de las temperaturas menos a 10º
 2. Porcentaje de las temperaturas mayores a 20º
-3. Cuántos días la temperatura superó los 25º */
+3. Cuantos días la temperatura superó los 25º */
 #include <stdio.h>
 #include <stdlib.h>
 int i, N=7, supveinti;
@@ -23,6 +23,12 @@ main(){
 	}
 	prom=acum/mendiez;
 	porc=mayveinte*100/7;
-	printf("El promedio de las temperaturas menores a 10 grados es de %f.\nEl porcentaje de las mayores a 20 grados es de %f porciento.\nLa temperatura supero los 25 grados %d dias.",prom,porc,supveinti);
+	if(mendiez==0){
+		printf("No hubo temperaturas menores a 10 grados.");
+	}
+	else{
+		printf("El promedio de las temperaturas menores a 10 grados es de %f.",prom);
+	}
+    printf("\nEl porcentaje de las mayores a 20 grados es de %f porciento.\nLa temperatura supero los 25 grados %d dias.",porc,supveinti);
 	getch();
 }
