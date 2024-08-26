@@ -1,11 +1,11 @@
-/* Para procesar a lo celso la policia necesita un programa que procese los datos de 8 personas maximo (por que, no?). Se leen
-de cada persona su genero y edad. Puede ser que lo celso no sea procesado. Finaliza el programa al ingresar 0 como edad. Mostra
+/* Para procesar a lo celso la policia necesita un programa que procese los datos de 8 personas maximo (por que, no?). Se leen de cada persona su genero y edad.
+Puede ser que lo celso no sea procesado. Finaliza el programa al ingresar 0 como edad. Mostrar:
 1. Porcentaje de cada genero
 2. Edad menor masculina y edad mayor entre todos los censados
 3. Promiedo de las edades entre todos los censados y promiedo de edades masculinas
 4. Que porcentaje de las mujeres son menores a 40 años
 5. Entre los mayores a 50, que porcentaje son varones
-6. Si lo celso va a ser detenido */
+6. Si Lo Celso va a ser detenido */
 #include <stdio.h>
 int i, edad, genero, min, max;
 float hombres, mujeres, acumHombres, acumTotal, cuarenta, cincuenta, viejo, porcHom, porcMuj, promTot, promHom, porcCua, porcCin;
@@ -25,7 +25,7 @@ main(){
 				}
 				acumHombres=edad+acumHombres;
 			}
-			if(genero==2){
+			else{
 				mujeres=mujeres+1;
 				if(edad<40){
 					cuarenta=cuarenta+1;
