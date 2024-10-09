@@ -16,6 +16,9 @@ main(){
 	for(i=0;i<N;i++){
 		for(j=0;j<N;j++){
 			acum=matriz[i][j]+acum;
+			if(i==j){
+				traza=matriz[i][j]+traza;
+			}
 		}
 		prom=acum/N;
 		printf("\nEl promedio del alumno %d es de %f",i,prom);
@@ -28,13 +31,6 @@ main(){
 		prom=acum/N;
 		printf("\nEl promedio de la materia %d es de %f",j,prom);
 		acum=0;
-	}
-	for(i=0;i<N;i++){
-		for(j=0;j<N;j++){
-			if(i==j){
-				traza=matriz[i][j]+traza;
-			}
-		}
 	}
 	printf("\nLa traza es de %d.",traza);
 }
